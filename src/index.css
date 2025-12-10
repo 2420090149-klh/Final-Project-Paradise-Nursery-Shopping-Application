@@ -1,0 +1,27 @@
+:root{
+  --accent:#2f7a62;
+  --muted:#f5f5f5;
+}
+*{box-sizing:border-box}
+body{font-family:Arial, Helvetica, sans-serif;margin:0;background:var(--muted);color:#222}
+.app-root main{padding:16px;max-width:1100px;margin:0 auto}
+.header{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:white;border-bottom:1px solid #eee}
+.header .brand{display:flex;align-items:center;gap:12px}
+.brand h1{margin:0;font-size:20px;color:var(--accent)}
+.nav a{margin-left:12px;color:#444;text-decoration:none}
+.cart-badge{background:var(--accent);color:white;padding:6px 10px;border-radius:20px;display:inline-flex;align-items:center;gap:8px}
+.landing{height:70vh;background-image:url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1400&q=60');background-size:cover;color:white;display:flex;align-items:center}
+.landing .container{padding:40px;background:rgba(0,0,0,0.35);max-width:700px;margin-left:40px}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.card{background:white;border-radius:8px;padding:12px;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+.card img{width:100%;height:140px;object-fit:cover;border-radius:6px}
+.card h3{margin:8px 0 4px 0}
+.card .row{display:flex;justify-content:space-between;align-items:center}
+.btn{background:var(--accent);color:white;padding:8px 10px;border-radius:6px;border:none;cursor:pointer}
+.btn.small{padding:6px 8px;font-size:14px}
+.cart-list{display:flex;flex-direction:column;gap:10px}
+.cart-item{display:flex;gap:12px;align-items:center;background:white;padding:12px;border-radius:8px}
+.cart-item img{width:90px;height:70px;object-fit:cover;border-radius:6px}
+.qty-controls{display:flex;gap:6px;align-items:center}
+.total-row{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding:12px;background:#fff;border-radius:8px}
+.footer-actions{display:flex;gap:12px}
